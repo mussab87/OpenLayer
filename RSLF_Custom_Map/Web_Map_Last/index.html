@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./libs/v6.15.1-dist/ol.css"> -->
+  <link rel="stylesheet" href="./libs/v7.3.0/ol.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="controls">
+    <button id="draw-polygon">رسم مضلع</button>
+    <button id="draw-line">رسم خط</button>
+    <button id="draw-point">رسم نقطة</button>
+    <button id="clear">مسح الرسومات</button>
+  </div>
+  <div class="grid-container">
+    <div class="grid-2">
+      <div class="column-map" id='openlayers-map' style="width: 100%; height: 100vh;"></div>
+      <div id="coordinates"></div>
+      <!-- <div id="controls">
+        
+      </div> -->
+      <!-- <label for="color-picker">اختر لون التظليل:</label>
+      <input type="color" id="color-picker" value="#ff0000"> -->
+    </div>
+
+    <div class="grid-1">
+      <div class="column-navigation">
+        <a href="#"><img src="" alt=""></a>
+        <a title='المملكة العربية السعودية' id='المملكة العربية السعودية' class='active'>المملكة العربية السعودية</a>
+        <a title='المنطقة الشمالية' id='المنطقة الشمالية'>المنطقة الشمالية</a>
+        <a title='المنطقة الشرقية' id='المنطقة الشرقية'>المنطقة الشرقية</a>
+        <a title='المنطقة الجنوبية' id='المنطقة الجنوبية'>المنطقة الجنوبية</a>
+        <a title='المنطقة الوسطى' id='المنطقة الوسطى'>المنطقة الوسطى</a>
+        <a title='منطقة الطائف' id='منطقة الطائف'>منطقة الطائف</a>
+        <a title='المدينة المنورة' id='المدينة المنورة'>المدينة المنورة</a>
+        <a title='المنطقة الغربية' id='المنطقة الغربية'>المنطقة الغربية</a>
+        <a title='المنطقة الشمالية الغربية' id='المنطقة الشمالية الغربية'>المنطقة الشمالية الغربية</a>
+      </div>
+    </div>
+    <!-- <div class="grid-3">
+      <div class="column-menu" id='menu-information'>
+        <p id='cityname'>Welcome to Australian Capital Cities Tour Map</p>
+        <img id='cityimage' src="./data/City_images/Australian_Flag.jpg" alt="Australian_Flag">
+      </div>
+    </div> -->
+  </div>
+
+  <div class="popover-information">
+    <p id='popover-text'></p>
+  </div>
+  <div class="overlay-container">
+    <table>
+
+      <tr>
+        <th style="text-align:center;">وحدات المنطقة</th>
+      </tr>
+
+
+      <tr>
+        <td>التموين</td>
+        <td>70%</td>
+
+      </tr>
+
+    </table>
+    <span class='overlay-text' id='feature-name'></span><br>
+    <span class='overlay-text' id='feature-description'></span><br>
+  </div>
+
+  <div class="overlay-container2">
+    <table>
+
+      <tr>
+        <th style="text-align:center;"> نوع الوحدة</th>
+      </tr>
+      <tr>
+        <td>السرعة</td>
+        <td>3000 متر</td>
+      </tr>
+    </table>
+
+    <span class='overlay-text' id='tank-name'></span><br>
+    <span class='overlay-text' id='tank-description'></span><br>
+  </div>
+
+  <!-- <script src="https://kit.fontawesome.com/YOUR FONT AWESOME KEY HERE" crossorigin="anonymous"></script> -->
+  <!-- <script src="./libs/v6.15.1-dist/ol.js"></script> -->
+  <script src="./libs/v7.3.0/ol.js"></script>
+  <!-- <script src="./libs/v6.15.1-dist/proj4.js"></script> -->
+  <script src='./main.js'></script>
+</body>
+
+</html>
